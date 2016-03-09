@@ -4417,7 +4417,7 @@ angular.module('ngCordova.plugins.imagePicker', [])
       getPictures: function (options) {
         var q = $q.defer();
 
-        $window.imagePicker.getPictures(function (results) {
+       plugins.imagePicker.getPictures(function (results) {
           q.resolve(results);
         }, function (error) {
           q.reject(error);
